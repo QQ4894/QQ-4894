@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>受注管理&nbsp;|&nbsp;受注リスト</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="main.css" type="text/css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1>会員管理システム</h1>
+            <nav>
+                <ul>
+                    <li><a href="/websamples/chap15/dashboard.html">ダッシュボード</a></li>
+                    <li><a href="/websamples/chap15/memberList.html">会員管理</a></li>
+                    <li><a href="/websamples/chap15/orderManagement.html">受注管理</a></li>
+                    <li><a href="/websamples/chap15/productManagement.html">商品管理</a></li>
+                    <li><a href="/websamples/chap15/masterManagement.html">マスター管理</a></li>
+                    <li><a href="/websamples/chap15/loginInformation.html">ログイン情報</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <nav id="breadcrumb">
+            <ul>
+                <li><a href="/websamples/chap15/dashboard.html">ダッシュボード</a></li>
+                <li>受注リスト</li>
+            </ul>
+        </nav>
+
+        <main>
+                <h2>受注管理</h2>
+
+                <section>
+                    <h3>受注リスト</h3>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>受注NO</th>
+                                <th>受注氏名</th>
+                                <th>会員種類</th>
+                                <th>電話番号</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>4153587</td>
+                                <td>田中&nbsp;麻衣</td>
+                                <td>通常</td>
+                                <td>090-1234-5678</td>
+                                <td>
+                                    <form action="/websamples/chap15/orderDetailA.html" method="GET">
+                                        <input type="hidden" name="memberID" value="4153587">
+                                        <button type="submit">詳細表示</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </section>
+        </main>
+    </body>
+</html>
